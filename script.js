@@ -9,9 +9,23 @@ function reverseString(strElement) { //Creo la funzione
     }
     return palindromeUserWord //Ritorno la variabile con la parola INVERTITA
 }
-console.log(reverseString(userWord)); //STAMP
 
+//METHOD WITH SPLIT REVERSE JOIN
+
+let reversedWord = userWord.split('').reverse().join('');
+console.log(reversedWord); // !DEBUG!
+
+if (userWord === reversedWord) {
+    console.log('the word is a palindrome')
+}
+else {
+    console.log('is not a palindrome')
+}
+
+
+console.log(reverseString(userWord)); //STAMP
 console.log(reverseString('! OTUIA')); //STAMP "help"
+
 
 
 ///////////////////////////////////////////////////////////////////////
